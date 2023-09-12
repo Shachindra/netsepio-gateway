@@ -11,7 +11,7 @@ import (
 
 func main() {
 	app.Init()
-	logwrapper.Log.Info("Starting MCube NFT Gateway Platform")
+	logwrapper.Log.Info("Starting NetSepio Gateway")
 	addr := fmt.Sprintf(":%d", envconfig.EnvVars.APP_PORT)
 	err := app.GinApp.Run(addr)
 	if err != nil {
